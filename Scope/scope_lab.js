@@ -9,6 +9,10 @@ const globalConst = "I'm a global constant";
 var blockVar = "I'm a block-scoped var";
 let blockLet = "I'm a block-scoped let";
 const blockConst = "I'm a block-scoped const";
+
+blockVar = "New blockVar value";
+blockLet = "New blockLet value";
+// blockConst = "New blockConst value";
 }
 
 function show(){
@@ -18,8 +22,14 @@ function show(){
 }
 show();
 
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
-// console.log(blockVar);
-// console.log(blockLet);
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+blockVar = "New blockVar value";
+blockLet = "New blockLet value";
+blockConst = "New blockConst value";
+
+console.log(blockVar);
+console.log(blockLet);
+console.log(blockConst);
