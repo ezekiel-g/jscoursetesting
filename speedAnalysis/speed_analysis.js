@@ -26,7 +26,7 @@ const endTest = () => {
     let userTypedText = document.getElementById('userInput').value
 
     // Split the text using regex to count words correctly
-    let typedWords = userTypedText.split(/\s+/).filter(function (word) {
+    let typedWords = userTypedText.split(/\s+/).filter(word => {
         return word !== ''
     }).length
 
