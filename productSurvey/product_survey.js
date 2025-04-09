@@ -22,7 +22,5 @@ const submitButton = document.getElementById('submitButton')
 submitButton.addEventListener('click', submitFeedback)
 
 document.addEventListener('keydown', event => {
-    if (event.key === 'Enter') {
-      submitFeedback()
-    }
-  })
+    if (event.key === 'Enter') { submitFeedback() }
+})
